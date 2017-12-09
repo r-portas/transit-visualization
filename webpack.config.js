@@ -1,4 +1,5 @@
 var CopyWebpackPlugin = require('copy-webpack-plugin')
+var Dotenv = require('dotenv-webpack')
 
 module.exports = {
     entry: './src/index.tsx',
@@ -30,7 +31,11 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             { from: 'index.html', to: 'index.html' }
-        ])
+        ]),
+        new Dotenv({
+            path: './.env',
+            safe: true
+        })
     ],
 
     devServer: {

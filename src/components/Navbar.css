@@ -1,9 +1,18 @@
 .Navbar-brand {
+    font-size: 200%;
+    font-weight: 100;
+    padding: 1em;
+}
 
+.Navbar-brand > b {
+    text-decoration: underline #32c8f4;
 }
 
 .Navbar {
     height: 60px;
     background-color: #0a0a0a;
-    color: #32c8f4;
+    color: #F5F5F5;
+
+    display: flex;
+    align-items: center;
 }

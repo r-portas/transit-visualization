@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { Navbar } from './Navbar'
+import { Map } from './Map'
 
 import './App.css'
 
@@ -13,8 +14,7 @@ export class App extends React.Component<AppProps, {}> {
       <div>
         <Navbar />
         <h1>Hello world</h1>
-
-        <h2>This is a typescript and react template</h2>
+        <Map />
       </div>
     )
   }
