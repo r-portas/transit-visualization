@@ -9,9 +9,9 @@ export interface AppProps {
 }
 
 export class App extends React.Component<AppProps, {}> {
-  render () {
+  render (): JSX.Element {
     return (
-      <div>
+      <div className='App'>
         <Navbar />
         <h1>Hello world</h1>
         <Map />

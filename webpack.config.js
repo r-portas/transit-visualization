@@ -42,6 +42,7 @@ module.exports = {
         contentBase: __dirname + '/dist',
         index: 'index.html',
         compress: true,
+        overlay: true,
         port: 3000
     }
 }
